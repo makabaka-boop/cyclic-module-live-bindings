@@ -1,0 +1,14 @@
+{
+  "name": "micromod",
+  "version": "1.0.0",
+  "description": "Restricted ES-module interpreter with live bindings, over at most 6 same-directory .mjs files",
+  "type": "module",
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node test/run.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "acorn": "^8.19.0"
+  }
+}

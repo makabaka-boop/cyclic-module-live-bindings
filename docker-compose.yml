@@ -1,0 +1,8 @@
+# The tool container mounts the module directory read-only (":ro").
+# Point the volume at any directory holding <= 6 same-directory .mjs modules.
+services:
+  micromod:
+    build: .
+    volumes:
+      - ./samples/live:/modules:ro
+    command: ["/modules", "main.mjs", "--call", "main"]
