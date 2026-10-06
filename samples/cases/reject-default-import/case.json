@@ -1,0 +1,1 @@
+{ "oracle": false, "expect": { "exit": 1, "code": "SYNTAX", "message": "ImportDefaultSpecifier" } }

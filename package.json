@@ -1,0 +1,14 @@
+{
+  "name": "restricted-module-interpreter",
+  "version": "1.0.0",
+  "description": "Restricted .mjs module interpreter with live bindings (acorn AST, no native import / vm.SourceTextModule)",
+  "type": "module",
+  "main": "src/interpreter.js",
+  "scripts": {
+    "test": "node tests/run-tests.js",
+    "cli": "node src/cli.js"
+  },
+  "dependencies": {
+    "acorn": "^8.19.0"
+  }
+}

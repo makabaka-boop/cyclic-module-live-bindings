@@ -1,0 +1,10 @@
+services:
+  interp:
+    build: .
+    # The module directory is mounted READ-ONLY: the interpreter only reads
+    # the .mjs sources and can never modify the samples.
+    volumes:
+      - ./samples/cases/counter:/modules:ro
+    # Override on the command line, e.g.:
+    #   docker compose run --rm interp /modules main.mjs --call main
+    command: ["/modules", "main.mjs", "--call", "main"]
